@@ -1,0 +1,9 @@
+menu {
+    clip-path: inset(0 0 100% 0);
+    z-index: -1;
+}
+
+menu.open {
+    clip-path: inset(0 0 0 0);
+    z-index: 99;
+}

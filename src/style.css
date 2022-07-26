@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    header {
+        @apply bg-black h-[100px] w-full flex items-center justify-between px-8
+    }
+    menu {
+        @apply w-full h-screen absolute inset-0 p-0 flex flex-col origin-top-right transition-all duration-1000
+    }
+    .menu-header {
+        @apply bg-black h-[100px] w-full flex items-center justify-between px-8
+    }
+  }
