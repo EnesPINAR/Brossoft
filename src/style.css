@@ -12,4 +12,7 @@
     .menu-header {
         @apply bg-black h-[100px] w-full flex items-center justify-between px-8
     }
+    a {
+        @apply hover:text-primary transition
+    }
   }

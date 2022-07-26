@@ -8,7 +8,11 @@ module.exports = {
       main: ['Poppins', 'sans-serif'],
       handwriting: ['Satisfy', 'cursive'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '#D3AC5F'
+      }
+    },
   },
   plugins: [],
 }
