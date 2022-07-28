@@ -7,3 +7,26 @@ menu.open {
     clip-path: inset(0 0 0 0);
     z-index: 99;
 }
+
+.homepage-content {
+    background: linear-gradient(0deg, #372c18, #000000);
+    background-size: 400% 400%;
+
+    -webkit-animation: breath 6s ease infinite;
+    -moz-animation: breath 6s ease infinite;
+    animation: breath 6s ease infinite;
+}
+
+@keyframes breath {
+    0% {
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-position: 70% 30%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}

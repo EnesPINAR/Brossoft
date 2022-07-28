@@ -15,4 +15,7 @@
     a {
         @apply hover:text-primary transition
     }
+    .homepage-content {
+        @apply h-[calc(100vh-100px)] w-full p-7 flex flex-col items-center justify-center
+    }
   }
