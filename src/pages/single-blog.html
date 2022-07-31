@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../../dist/output.css">
+    <link rel="stylesheet" href="../custom.css">
+    <script defer src="../js/menu.js"></script>
+    <script defer src="../js/text-change.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Brossoft - Homepage</title>
+</head>
+<body class="bg-black">
+
+    <header>
+        <div class="location">
+            <a href="#" class="font-heading text-white text-2xl">
+                Blogs
+            </a>
+        </div>
+        <div class="open-menu">
+            <button class="bg-transparent">
+                <i class="material-symbols-outlined text-white text-2xl hover:text-primary transition">
+                    menu
+                </i>
+            </button>
+        </div>
+    </header>
+
+    <menu>
+        <div class="menu-header">
+            <h1 class="font-heading text-white text-2xl">Menu</h1>
+            <button class="close-menu bg-transparent">
+                <i class="material-symbols-outlined text-white text-2xl hover:text-primary transition">
+                    close
+                </i>
+            </button>
+        </div>
+
+        <div class="menu-content flex-1 bg-black">
+            <ul class="h-full">
+                <li class="h-1/6 flex items-center justify-center">
+                    <a href="#" class="font-heading text-white text-2xl">Homepage</a>
+                </li>
+                <li class="h-1/6 flex items-center justify-center">
+                    <a href="#" class="font-heading text-white text-2xl">Services</a>
+                </li>
+                <li class="h-1/6 flex items-center justify-center">
+                    <a href="#" class="font-heading text-white text-2xl">Works</a>
+                </li>
+                <li class="h-1/6 flex items-center justify-center">
+                    <a href="#" class="font-heading text-white text-2xl">Blog</a>
+                </li>
+                <li class="h-1/6 flex items-center justify-center">
+                    <a href="#" class="font-heading text-white text-2xl">About</a>
+                </li>
+                <li class="h-1/6 flex items-center justify-center">
+                    <a href="#" class="font-heading text-white text-2xl">Contact</a>
+                </li>                
+            </ul>
+        </div>
+    </menu>
+
+    <div class="container flex flex-wrap xl:flex-row flex-col-reverse justify-between p-7">
+        <div class="lg:w-3/6 w-full grid grid-col-1">
+            <div class="w-full">
+                <h2 class="font-heading text-white text-2xl mb-5">Blogs</h2>
+            </div>
+            <div class="w-full">
+                <div class="flex md:flex-row flex-col md:h-[250px] md:w-max w-full mb-8">
+                    <img src="../images/blog-photo.jpg" alt="blog" class="w-min rounded md:mb-0 mb-4 ">
+                    <div class="md:w-max w-full flex flex-col justify-between md:pl-4">
+                        <div class="md:mb-0 mb-4 ">
+                            <a href="#" class="inline-block">
+                                <h3 class="w-max font-heading text-white text-xl mb-2 hover:text-primary transition">Blog Title</h3>
+                            </a>
+                            <div class="categories">
+                                <div class="category">
+                                    Category #1
+                                </div>
+                                <div class="category">
+                                    Category #1
+                                </div>
+
+                                <div class="category">
+                                    Category #1
+                                </div>
+
+                                <div class="category">
+                                    Category #1
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-main text-white mb-2">
+                                DD.MM.YYYY
+                            </p>
+                            <a href="#" class="inline-block">
+                                <p class="w-max font-main text-white hover:text-primary transition">
+                                    Author
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:w-2/6 w-full">
+            <h2 class="font-heading text-white text-2xl mb-5 xl:block hidden">Suggested Blogs</h2>
+            <div class="w-full xl:block hidden">
+                <div class="md:w-max">
+                    <div class="flex md:flex-row flex-col xl:mb-0 mb-8 w-full">
+                        <img src="../images/blog-photo.jpg" alt="blog" class="md:w-[150px] md:h-[150px] w-min rounded md:mb-0 mb-4 ">
+                        <div class="flex flex-col justify-between md:pl-4 pl-0">
+                            <a href="#" class="inline-block">
+                                <h3 class="w-max font-heading text-white text-xl hover:text-primary transition md:mb-0 mb-2">Blog Title</h3>
+                            </a>
+                            <div class="categories md:mb-0 mb-2">
+                                <div class="category">
+                                    Category #1
+                                </div>
+                                <div class="category">
+                                    Category #1
+                                </div>
+
+                                <div class="category">
+                                    Category #1
+                                </div>
+
+                                <div class="category">
+                                    Category #1
+                                </div>
+                            </div>
+                            <p class="font-main text-white md:mb-0 mb-2">
+                                DD.MM.YYYY
+                            </p>
+                            <a href="#" class="inline-block">
+                                <p class="w-max font-main text-white hover:text-primary transition">
+                                    Author
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

@@ -4,18 +4,87 @@
 
 @layer components {
     header {
-        @apply bg-black h-[100px] w-full flex items-center justify-between px-8
+        @apply bg-black h-[100px] w-full flex items-center justify-between px-7
     }
     menu {
         @apply w-full h-screen absolute inset-0 p-0 flex flex-col origin-top-right transition-all duration-1000
     }
     .menu-header {
-        @apply bg-black h-[100px] w-full flex items-center justify-between px-8
+        @apply bg-black h-[100px] w-full flex items-center justify-between px-7
     }
     a {
         @apply hover:text-primary transition
     }
     .homepage-content {
         @apply h-[calc(100vh-100px)] w-full p-7 flex flex-col items-center justify-center
+    }
+    .categories {
+        @apply max-w-full w-max md:w-max grid gap-1 grid-cols-2
+    }
+    .category {
+        @apply w-max bg-black border-solid border-2 border-border-dark px-4 py-1 rounded-full font-main text-white text-center whitespace-nowrap
+    }
+    .dropdown {
+        @apply w-full flex justify-between bg-white rounded px-2 py-1 mb-5 font-main text-black text-center whitespace-nowrap
+    }
+    .dropdown p {
+        @apply mr-2 transition-all
+    }
+    .dropdown> svg, .dropdown > i {
+        @apply group-focus-within:rotate-180 transition-all
+    }
+    .dropdown-content {
+        @apply invisible opacity-0 group-focus-within:visible group-focus-within:opacity-100 flex flex-col mt-1 border-solid border-2 border-border-main w-full rounded absolute top-full z-10 bg-white text-black transition-all
+    }
+    .dropdown-content a {
+        @apply hover:bg-border-main p-4 rounded
+    }
+    .team-member {
+        @apply flex lg:justify-between lg:flex-row flex-col lg:items-stretch items-center
+    }
+    .team-member:not(:last-of-type) {
+        @apply mb-16
+    }
+    .team-member:nth-child(even) {
+        @apply lg:flex-row-reverse
+    }
+    .team-member:nth-child(odd) {
+        @apply lg:flex-row
+    }
+    .team-member-content {
+        @apply flex flex-col lg:max-w-[50%]
+    }
+    .team-member:nth-child(odd) .team-member-content{
+        @apply lg:items-end items-center
+    }
+    .team-member:nth-child(even) .team-member-content{
+        @apply lg:justify-start lg:items-start items-center
+    }
+    .team-member:nth-child(odd) .team-member-content p {
+        @apply lg:text-right
+    }
+    .team-member:nth-child(even) .team-member-content p {
+        @apply lg:text-left
+    }
+    .specs {
+        @apply flex-wrap flex mb-2 lg:w-auto w-full lg:justify-start justify-center
+    }
+    .spec {
+        @apply flex items-center justify-center rounded-full text-center w-max px-4 py-1 bg-white text-black font-main lg:mb-0 mb-2
+    }
+    .spec:last-of-type {
+        @apply lg:mt-2 xl:mt-0
+    }
+    .team-member:nth-child(odd) .team-member-content .spec {
+        @apply ml-2
+    }
+    .team-member:nth-child(even) .team-member-content .spec {
+        @apply mr-2
+    }
+    .team-member:nth-child(odd) .team-member-content .spec:not(:first-of-type) {
+        @apply lg:ml-2
+    }
+    .team-member:nth-child(even) .team-member-content .spec:not(:last-of-type) {
+        @apply lg:mr-2
     }
   }

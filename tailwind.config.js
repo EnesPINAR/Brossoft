@@ -8,9 +8,14 @@ module.exports = {
       main: ['Poppins', 'sans-serif'],
       handwriting: ['Satisfy', 'cursive'],
     },
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
-        'primary': '#D3AC5F'
+        'primary': '#D3AC5F',
+        'border-main': '#E9E9E9',
+        'border-dark': '#101010'
       }
     },
   },

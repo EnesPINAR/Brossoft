@@ -1,3 +1,11 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 menu {
     clip-path: inset(0 0 100% 0);
     z-index: -1;
@@ -11,7 +19,6 @@ menu.open {
 .homepage-content {
     background: linear-gradient(0deg, #372c18, #000000);
     background-size: 400% 400%;
-
     -webkit-animation: breath 6s ease infinite;
     -moz-animation: breath 6s ease infinite;
     animation: breath 6s ease infinite;
